@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">My Tic-Tac-Toe</string>
+    <string name="title_string">Read the instructions and enter your name down below.</string>
+    <string name="player_name"/>
+    <string name="enter_name">Enter your name</string>
+    <string name="restart_string">Restart</string>
+    <string name="blank"> </string>
+    <string name="board_space" />
+    <string name="GAME_TEXT" />
+</resources>

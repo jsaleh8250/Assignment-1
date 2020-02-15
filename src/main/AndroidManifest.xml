@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <manifest package="edu.quinnipiac.mytic_tac_toe"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <application
+        android:theme="@style/AppTheme"
+        android:supportsRtl="true"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:icon="@mipmap/ic_launcher"
+        android:allowBackup="true">
+
+    <activity
+        android:label="@string/app_name"
+        android:name="edu.quinnipiac.mytic_tac_toe.SimpleTitleScreen">
+
+    <intent-filter>
+
+    <action
+        android:name="android.intent.action.MAIN"/>
+
+    <category
+        android:name="android.intent.category.LAUNCHER"/>
+</intent-filter>
+</activity>
+
+    <activity
+        android:name=".MainActivity"/>
+    </application>
+
+</manifest>

@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/TTT_LAYOUT"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/holo_red_dark"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/Game_Text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:paddingTop="100dp"
+        android:paddingBottom="20dp"
+        android:text="@string/GAME_TEXT"
+        android:textSize="24sp"
+        android:textStyle="bold|italic"
+        android:typeface="sans" />
+
+    <GridLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@android:color/darker_gray"
+        android:columnCount="3">
+
+        <ImageButton
+            android:id="@+id/button_00"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginBottom="5dp"
+            android:contentDescription="@string/board_space"
+            android:onClick="playerMove" />
+
+        <ImageButton
+            android:id="@+id/button_01"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_marginBottom="5dp"
+            android:contentDescription="@string/board_space"
+            android:onClick="playerMove" />
+
+        <ImageButton
+            android:id="@+id/button_02"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginBottom="5dp"
+            android:contentDescription="@string/board_space"
+            android:onClick="playerMove" />
+
+        <ImageButton
+            android:id="@+id/button_10"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_marginRight="5dp"
+            android:contentDescription="@string/board_space"
+            android:onClick="playerMove" />
+
+        <ImageButton
+            android:id="@+id/button_11"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:contentDescription="@string/board_space"
+            android:onClick="playerMove" />
+
+        <ImageButton
+            android:id="@+id/button_12"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_marginLeft="5dp"
+            android:contentDescription="@string/board_space"
+            android:onClick="playerMove" />
+
+        <ImageButton
+            android:id="@+id/button_20"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="5dp"
+            android:contentDescription="@string/board_space"
+            android:onClick="playerMove" />
+
+        <ImageButton
+            android:id="@+id/button_21"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_marginTop="5dp"
+            android:contentDescription="@string/board_space"
+            android:onClick="playerMove" />
+
+        <ImageButton
+            android:id="@+id/button_22"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:contentDescription="@string/board_space"
+            android:onClick="playerMove" />
+
+    </GridLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:paddingTop="20dp">
+
+        <Button
+            android:id="@+id/quit_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="onQuit"
+            android:text="quit" />
+
+        <Button
+            android:id="@+id/reset_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="onReset"
+            android:text="Reset" />
+    </LinearLayout>
+
+</LinearLayout>
